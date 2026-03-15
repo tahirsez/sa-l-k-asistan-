@@ -10,7 +10,7 @@ try:
     GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
     genai.configure(api_key=GOOGLE_API_KEY)
     # En güncel ve stabil model: gemini-1.5-flash
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-1.0-flash')
 except Exception as e:
     st.error("Sistem bağlantısında bir sorun var. Lütfen API anahtarını Secrets kısmına eklediğinizden emin olun.")
 
